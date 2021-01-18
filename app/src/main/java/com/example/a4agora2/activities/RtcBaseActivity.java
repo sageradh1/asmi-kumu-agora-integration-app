@@ -11,6 +11,8 @@ import io.agora.rtc.video.VideoCanvas;
 import io.agora.rtc.video.VideoEncoderConfiguration;
 import com.example.a4agora2.R;
 
+import static com.example.a4agora2.sample.RtcTokenBuilderSample.generateNewAccessToken;
+
 public abstract class RtcBaseActivity extends BaseActivity implements EventHandler {
 
     @Override
@@ -37,7 +39,8 @@ public abstract class RtcBaseActivity extends BaseActivity implements EventHandl
         // same channel successfully using the same app id.
         // 2. One token is only valid for the channel name and uid that
         // you use to generate this token.
-        String token = getString(R.string.agora_access_token);
+//        String token = getString(R.string.agora_access_token);
+        String token = generateNewAccessToken();
         if (TextUtils.isEmpty(token) ) {
             token = null; // default, no token
         }

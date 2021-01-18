@@ -172,9 +172,26 @@ public class VideoGridContainer extends RelativeLayout implements Runnable {
                 array[0].addRule(RelativeLayout.ALIGN_PARENT_TOP, RelativeLayout.TRUE);
                 array[0].addRule(RelativeLayout.ALIGN_PARENT_LEFT, RelativeLayout.TRUE);
             } else if (i == 1) {
-                array[1] = new RelativeLayout.LayoutParams(width, height / 2);
-                array[0].height = array[1].height;
-                array[1].addRule(RelativeLayout.BELOW, mUserViewList.get(mUidList.get(0)).getId());
+
+//                array[1] = new RelativeLayout.LayoutParams(width, height / 2);
+//                array[0].height = array[1].height;
+//
+////                array[1] = new RelativeLayout.LayoutParams(width, (int) (height*0.7));
+////                array[0].height = (int) (0.3* height);
+//
+//                array[1].addRule(RelativeLayout.BELOW, mUserViewList.get(mUidList.get(0)).getId());
+//                array[1].addRule(RelativeLayout.ALIGN_PARENT_LEFT, RelativeLayout.TRUE);
+
+
+////                To new stream take full screen
+
+                array[0].width = 0;
+                array[0].height = 0;
+
+                array[1] = new RelativeLayout.LayoutParams(
+                        LayoutParams.MATCH_PARENT,
+                        LayoutParams.MATCH_PARENT);
+                array[1].addRule(RelativeLayout.ALIGN_PARENT_TOP, RelativeLayout.TRUE);
                 array[1].addRule(RelativeLayout.ALIGN_PARENT_LEFT, RelativeLayout.TRUE);
             } else if (i == 2) {
                 array[i] = new RelativeLayout.LayoutParams(width / 2, height / 2);

@@ -287,9 +287,12 @@ public class LiveActivity extends RtcBaseActivity {
         config.audioChannels = 2;
         config.audioBitrate = 48;
         // Width of the video (px). The default value is 360.
+//        config.width = 360;
+//        // Height of the video (px). The default value is 640.
+//        config.height = 640;
+
         config.width = 360;
-        // Height of the video (px). The default value is 640.
-        config.height = 640;
+        config.height = 720;
         // Video bitrate of the video (Kbps). The default value is 400.
         config.videoBitrate = 400;
         // Video framerate of the video (fps). The default value is 15. Agora adjusts all values over 30 to 30.
@@ -308,7 +311,9 @@ public class LiveActivity extends RtcBaseActivity {
         user.x = 0;
         user.audioChannel = 0;
         user.y = 0;
-        user.width = 640;
+//        user.width = 640;
+//        user.height = 720;
+        user.width = 360;
         user.height = 720;
 
         // CDN transcoding settings when using transcoding.
@@ -332,8 +337,9 @@ public class LiveActivity extends RtcBaseActivity {
 
     private void injectAsmiProcessedStreamToChannel(String rtmpUrl){
         LiveInjectStreamConfig config = new LiveInjectStreamConfig();
-        config.width = 0;
-        config.height = 0;
+//        config.width = 640;
+//        config.height = 720;
+
         config.videoGop = 25;
         config.videoFramerate = 15;
         config.videoBitrate = 400;
