@@ -3,6 +3,7 @@ package com.example.a4agora2.activities;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.os.Bundle;
+import android.util.DisplayMetrics;
 import android.view.SurfaceView;
 import android.view.View;
 import android.widget.ImageView;
@@ -17,6 +18,9 @@ import com.example.a4agora2.stats.LocalStatsData;
 import com.example.a4agora2.stats.RemoteStatsData;
 import com.example.a4agora2.stats.StatsData;
 import com.example.a4agora2.ui.VideoGridContainer;
+
+import java.util.concurrent.TimeUnit;
+
 import io.agora.rtc.Constants;
 import io.agora.rtc.IRtcEngineEventHandler;
 import io.agora.rtc.live.LiveInjectStreamConfig;
@@ -324,6 +328,13 @@ public class LiveActivity extends RtcBaseActivity {
 
         // Removes a URL to which the host pushes a stream.
         //        rtcEngine().removePublishStreamUrl(url);
+
+//        try {
+//            TimeUnit.SECONDS.sleep(5);
+//        } catch (InterruptedException e) {
+//            e.printStackTrace();
+//        }
+
         String published_url = getString(R.string.receive_stream_url);
         injectAsmiProcessedStreamToChannel(published_url);
     }
@@ -337,7 +348,14 @@ public class LiveActivity extends RtcBaseActivity {
 
     private void injectAsmiProcessedStreamToChannel(String rtmpUrl){
         LiveInjectStreamConfig config = new LiveInjectStreamConfig();
-//        config.width = 640;
+
+
+//        DisplayMetrics displayMetrics = new DisplayMetrics();
+//        getWindowManager().getDefaultDisplay().getMetrics(displayMetrics);
+//        int height = displayMetrics.heightPixels;
+//        int width = displayMetrics.widthPixels;
+
+//        config.width = width;
 //        config.height = 720;
 
         config.videoGop = 25;
@@ -347,7 +365,7 @@ public class LiveActivity extends RtcBaseActivity {
         config.audioBitrate = 48;
         config.audioChannels = 1;
 
-        rtcEngine().addInjectStreamUrl(rtmpUrl, config);
+            rtcEngine().addInjectStreamUrl(rtmpUrl, config);
 
         // Remove an online media stream.
 //        rtcEngine().removeInjectStreamUrl(rtmpUrl);

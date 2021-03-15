@@ -8,7 +8,7 @@
 <!--    &lt;!&ndash; Obtain a temp Access Token at https://dashboard.agora.io &ndash;&gt;-->
 <!--    &lt;!&ndash; You will need to deploy your own token server for production release &ndash;&gt;-->
 <!--    &lt;!&ndash; Leave this value empty if Security keys/Token is not enabled for your project &ndash;&gt;-->
-<!--    <string name="agora_access_token" translatable="false">00640d6c74319624236bb6a5b05449b2606IAD/oOsr3n//dCXo/+xMqH+SxEBtQ63tDuTW7+hw/5aOIelUBMMAAAAAEAA1BQ7XHDvNXwEAAQAcO81f</string>-->
+<!--    <string name="agora_access_token" translatable="false">00640d6c74319624236bb6a5b05449b2606IAAycag1euIdSE65hvMdAhUWXXQz8S3+SfBa5rRuVk4jepSWdMEAAAAAEAAdwi3RYB4/YAEAAQBgHj9g</string>-->
 <!--    <string name="channel_name" translatable="false">asmi-agora-common-channel</string>-->
 <!--</resources>-->
 
@@ -21,14 +21,37 @@
     <!-- Obtain a temp Access Token at https://dashboard.agora.io -->
     <!-- You will need to deploy your own token server for production release -->
     <!-- Leave this value empty if Security keys/Token is not enabled for your project -->
-    <string name="agora_access_token" translatable="false">00640d6c74319624236bb6a5b05449b2606IACT24Ed+9KNe+rDADiCbv5YV0tJaYBXJC0wa2BWZYcxpGLMzZAAAAAAEACyc3Bi06ruXwEAAQDTqu5f</string>
-    <string name="channel_name" translatable="false">test-channel</string>
-<!--    <string name="push_stream_url" translatable="false">rtmp://13.58.233.88:1935/live/HQ94FP5B5W0YF5CUCSWUGK2W1228XW</string>-->
+
+        <string name="channel_name" translatable="false">test-channel</string>
+<!--        <string name="channel_name" translatable="false">test-channel-rk</string>-->
+<!--         <string name="agora_access_token" translatable="false">00640d6c74319624236bb6a5b05449b2606IAAycag1euIdSE65hvMdAhUWXXQz8S3+SfBa5rRuVk4jepSWdMEAAAAAEAAdwi3RYB4/YAEAAQBgHj9g</string>-->
+
+    <!--    00640d6c74319624236bb6a5b05449b2606IAAycag1euIdSE65hvMdAhUWXXQz8S3+SfBa5rRuVk4jepSWdMEAAAAAEAAdwi3RYB4/YAEAAQBgHj9g-->
+
+
+
+    <!--    <string name="push_stream_url" translatable="false">rtmp://13.58.233.88:1935/live/HQ94FP5B5W0YF5CUCSWUGK2W1228XW</string>-->
 <!--    <string name="receive_stream_url" translatable="false">rtmp://13.58.233.88:1935/processed/HQ94FP5B5W0YF5CUCSWUGK2W1228XW</string>-->
 <!--    <string name="push_stream_url" translatable="false">rtmp://18.221.220.207:1935/live/dashboard</string>-->
 <!--    <string name="receive_stream_url" translatable="false">rtmp://18.221.220.207:1935/processed/dashboard</string>-->
 <!--    <string name="receive_stream_url" translatable="false">rtmp://13.58.233.88:1935/live1/abcde</string>-->
 
-    <string name="push_stream_url" translatable="false">rtmp://3.132.212.99:1935/live/dashboard</string>
-    <string name="receive_stream_url" translatable="false">rtmp://3.132.212.99:1935/processed/dashboard</string>
+<!--   C++ Client -->
+<!--    <string name="push_stream_url" translatable="false">rtmp://18.222.2.171:1935/live/dashboard</string>-->
+<!--    <string name="receive_stream_url" translatable="false">rtmp://18.222.2.171:1935/processed/dashboard</string>-->
+
+<!--   Python Staging -->
+    <string name="push_stream_url" translatable="false">rtmp://3.15.49.67:1935/live/dashboard</string>
+    <string name="receive_stream_url" translatable="false">rtmp://3.15.49.67:1935/processed/dashboard</string>
+<!--    <string name="receive_stream_url" translatable="false">rtmp://3.15.49.67:1935/test2/dashboard</string>-->
+
+<!--   Python Client -->
+<!--    <string name="push_stream_url" translatable="false">rtmp://3.140.79.45:1935/live/dashboard</string>-->
+<!--    <string name="receive_stream_url" translatable="false">rtmp://3.140.79.45:1935/processed/dashboard</string>-->
+
+<!--   Python Staging RK -->
+<!--    <string name="push_stream_url" translatable="false">rtmp://3.137.158.125:1935/live/rkdashboard</string>-->
+<!--    <string name="receive_stream_url" translatable="false">rtmp://3.137.158.125:1935/processed/rkdashboard</string>-->
+    <!--    <string name="receive_stream_url" translatable="false">rtmp://3.15.49.67:1935/test2/dashboard</string>-->
+
 </resources>

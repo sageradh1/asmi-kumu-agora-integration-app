@@ -40,5 +40,7 @@ public class Constants {
     public static final String KEY_CLIENT_ROLE = "key_client_role";
 
     public static final int USER_UID = 23455;
+//    for rk
+//    public static final int USER_UID = 234566;
 
 }

@@ -40,7 +40,7 @@ public abstract class RtcBaseActivity extends BaseActivity implements EventHandl
         // 2. One token is only valid for the channel name and uid that
         // you use to generate this token.
 //        String token = getString(R.string.agora_access_token);
-        String token = generateNewAccessToken();
+        String token =  generateNewAccessToken();
         if (TextUtils.isEmpty(token) ) {
             token = null; // default, no token
         }
